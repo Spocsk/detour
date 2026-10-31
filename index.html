@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Détour · balades en boucle à checkpoints</title>
+<meta name="description" content="Détour génère une balade à pied en boucle, calée sur ton temps, avec de vrais lieux à atteindre en chemin. Pour iPhone, iPad et iPhone Duo.">
+<meta name="theme-color" content="#F2C230">
+<meta property="og:title" content="Détour · balades en boucle à checkpoints">
+<meta property="og:description" content="Détour génère une balade à pied en boucle, calée sur ton temps, avec de vrais lieux à atteindre en chemin. Pour iPhone, iPad et iPhone Duo.">
+<meta property="og:image" content="assets/icon-512.png">
+<meta name="apple-itunes-app" content="app-id=6829195491">
+<link rel="icon" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="index.html"><img src="assets/favicon.png" alt="" width="34" height="34">Détour</a>
+    <nav class="nav" aria-label="Navigation principale"><a href="index.html#comment" class="opt">Comment ça marche</a><a href="index.html#plus" class="opt">Détour+</a><a href="support.html">Support</a></nav>
+  </div>
+</header>
+<main>
+
+<section class="hero" aria-labelledby="titre">
+  <svg class="contours" viewBox="0 0 1200 700" preserveAspectRatio="none" aria-hidden="true" fill="none" stroke="#17251E" stroke-opacity="0.12" stroke-width="1.5">
+    <path d="M-20 120 C 200 60, 420 200, 700 110 S 1100 40, 1220 100"/>
+    <path d="M-20 170 C 220 110, 440 250, 720 160 S 1100 90, 1220 150"/>
+    <path d="M-20 560 C 240 500, 460 640, 760 560 S 1100 500, 1220 540"/>
+    <path d="M-20 610 C 240 550, 480 690, 780 610 S 1100 550, 1220 590"/>
+  </svg>
+  <div class="wrap">
+    <div class="hero-copy">
+      <img src="assets/icon-512.png" alt="Icône de l’app Détour" width="88" height="88" style="border-radius:22px;box-shadow:0 14px 28px rgba(23,37,30,.22)">
+      <h1 id="titre">Détour</h1>
+      <p class="lead">Dis-moi combien de temps tu as, je te donne une bonne raison de sortir marcher.</p>
+      <div class="hero-actions">
+        <a class="store-badge" href="https://apps.apple.com/fr/app/id6829195491"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.37 12.78c-.02-2.3 1.88-3.4 1.96-3.45-1.07-1.56-2.73-1.78-3.32-1.8-1.41-.14-2.76.83-3.48.83-.72 0-1.82-.81-3-.79-1.54.02-2.96.9-3.76 2.27-1.6 2.78-.41 6.9 1.15 9.16.76 1.1 1.67 2.34 2.86 2.3 1.15-.05 1.58-.74 2.97-.74 1.38 0 1.77.74 2.98.72 1.23-.02 2.01-1.12 2.76-2.23.87-1.28 1.23-2.52 1.25-2.58-.03-.01-2.4-.92-2.42-3.65zM14.1 6.06c.63-.77 1.06-1.83.94-2.89-.91.04-2.01.61-2.67 1.37-.58.67-1.1 1.76-.96 2.8 1.01.08 2.05-.52 2.69-1.28z"/></svg><span><small>Télécharger dans</small><strong>l’App Store</strong></span></a>
+        <a class="btn btn-soft" href="#comment">Comment ça marche</a>
+      </div>
+      <p class="hero-note">Pour iPhone, iPad et iPhone Duo · Gratuit, avec Détour+ en option</p>
+    </div>
+    <div class="hero-art">
+      <svg class="hero-loop" viewBox="0 0 400 520" aria-hidden="true" fill="none">
+        <defs><mask id="m"><path class="reveal" d="M60 440 C 10 330, 20 170, 120 90 C 220 20, 360 60, 370 190 C 380 320, 300 380, 250 450 C 200 510, 110 500, 60 440 Z" stroke="#fff" stroke-width="14" stroke-linecap="round"/></mask></defs>
+        <path class="loop-path" mask="url(#m)" d="M60 440 C 10 330, 20 170, 120 90 C 220 20, 360 60, 370 190 C 380 320, 300 380, 250 450 C 200 510, 110 500, 60 440 Z" stroke="#17251E" stroke-width="6" stroke-linecap="round"/>
+        <circle class="pop" style="animation-delay:.9s" cx="120" cy="90" r="13" fill="#C2366B" stroke="#17251E" stroke-width="4"/>
+        <circle class="pop" style="animation-delay:1.4s" cx="370" cy="190" r="13" fill="#2C6BB0" stroke="#17251E" stroke-width="4"/>
+        <circle class="pop" style="animation-delay:2s" cx="250" cy="450" r="13" fill="#2F7D4F" stroke="#17251E" stroke-width="4"/>
+        <circle cx="60" cy="440" r="14" fill="#17251E"/>
+      </svg>
+      <div class="phone"><img src="assets/iphone-03-marche.jpg" alt="Écran de marche guidée : la carte, le tracé en pointillés et le prochain checkpoint, la boulangerie Berthillon à 16 minutes" width="500" height="1087"></div>
+    </div>
+  </div>
+</section>
+
+<section id="comment" aria-labelledby="t-comment">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="label">Comment ça marche</span>
+      <h2 id="t-comment">Trois choix, et tu es dehors.</h2>
+      <p>Détour ne te dit pas comment aller de A à B. Il te donne une raison d’y aller, et te ramène chez toi.</p>
+    </div>
+    <div class="steps">
+      <div class="card"><span class="num">1</span><h3>Ta durée</h3><p>20, 30, 45 minutes ou plus. La boucle part de là où tu es et y revient.</p></div>
+      <div class="card"><span class="num">2</span><h3>Ton envie</h3><p>Gourmand, nature, points de vue ou patrimoine : 2 à 4 vrais lieux à atteindre en chemin.</p></div>
+      <div class="card"><span class="num">3</span><h3>Sortir</h3><p>Suis le tracé. Chaque lieu atteint se valide tout seul et laisse un tampon dans ton carnet.</p></div>
+    </div>
+  </div>
+</section>
+
+<section aria-labelledby="t-envies" style="padding-top:0">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="label">Quatre envies</span>
+      <h2 id="t-envies">Des prétextes à marcher, pas des visites.</h2>
+    </div>
+    <div class="themes"><div class="theme" style="background:#F8DDE7"><span class="ico" style="background:#C2366B"><svg viewBox="0 0 24 24" fill="none" stroke="#FDFDFB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 11h14l-2 9H7z M7 11a5 5 0 0 1 10 0"/></svg></span><strong>Gourmand</strong><span>Boulangerie, café, glacier.</span></div><div class="theme" style="background:#DCEEDF"><span class="ico" style="background:#2F7D4F"><svg viewBox="0 0 24 24" fill="none" stroke="#FDFDFB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 19c0-8 6-14 14-14 0 8-6 14-14 14z M5 19l8-8"/></svg></span><strong>Nature</strong><span>Parc, rivière, jardin.</span></div><div class="theme" style="background:#DCE8F5"><span class="ico" style="background:#2C6BB0"><svg viewBox="0 0 24 24" fill="none" stroke="#FDFDFB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 19l6-9 4 6 3-4 5 7z"/></svg></span><strong>Points de vue</strong><span>Belvédère, pont, panorama.</span></div><div class="theme" style="background:#F3E6CF"><span class="ico" style="background:#9A5F0E"><svg viewBox="0 0 24 24" fill="none" stroke="#FDFDFB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4l8 5H4z M5 10h14 M7 10v8 M12 10v8 M17 10v8 M4 20h16"/></svg></span><strong>Patrimoine</strong><span>Église, musée, monument.</span></div></div>
+  </div>
+</section>
+
+<section aria-labelledby="t-ecrans" style="padding-top:0">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="label">En images</span>
+      <h2 id="t-ecrans">Une balade en quatre écrans.</h2>
+    </div>
+    <div class="gallery">
+      <figure><div class="phone"><img src="assets/iphone-02-sortir.jpg" alt="Accueil « On sort ? » avec la durée et l’envie" loading="lazy" width="500" height="1087"></div><figcaption>Choisis ta durée et ton envie</figcaption></figure>
+      <figure><div class="phone"><img src="assets/iphone-03-marche.jpg" alt="Marche guidée sur la carte" loading="lazy" width="500" height="1087"></div><figcaption>Suis la boucle</figcaption></figure>
+      <figure><div class="phone"><img src="assets/iphone-04-tampon.jpg" alt="Tampon gagné à la boulangerie Berthillon" loading="lazy" width="500" height="1087"></div><figcaption>Gagne un tampon par lieu</figcaption></figure>
+      <figure><div class="phone"><img src="assets/iphone-06-carnet.jpg" alt="Le carnet de tampons et la carte des lieux visités" loading="lazy" width="500" height="1087"></div><figcaption>Remplis ton carnet</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section aria-labelledby="t-duo" style="padding-top:0">
+  <div class="wrap split">
+    <div>
+      <span class="label">iPhone Duo</span>
+      <h2 id="t-duo" style="margin-top:10px">Fermé dans la main, ouvert sur la carte.</h2>
+      <ul class="bullets">
+        <li>Fermé, l’essentiel tient sur l’écran externe : la durée, l’envie, et « Sortir ».</li>
+        <li>Ouvert, les réglages d’un côté, la boucle qui se dessine de l’autre.</li>
+        <li>Mode surprise : les lieux suivants se dévoilent en route.</li>
+        <li>Objectif de la semaine, badges, et chaque sortie enregistrée dans Apple Santé si tu le souhaites.</li>
+      </ul>
+    </div>
+    <div class="shot"><img src="assets/duo-ouvert.jpg" alt="iPhone Duo ouvert : « Prépare ta sortie » à gauche, la boucle sur la carte à droite" loading="lazy" width="1400" height="985"></div>
+  </div>
+</section>
+
+<section id="plus" aria-labelledby="t-plus" style="padding-top:0">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="label">Détour+</span>
+      <h2 id="t-plus">Gratuit pour prendre l’habitude. Détour+ pour aller plus loin.</h2>
+      <p>Sorties illimitées, les quatre envies, des boucles jusqu’à 90 minutes avec dénivelé et terrain sur mesure, et le mode surprise.</p>
+    </div>
+    <div class="pricing">
+      <div class="plan best"><span class="pill">7 jours offerts</span><h3>Annuel</h3><span class="price">19,99 €</span><p>par an, soit 1,67 € par mois</p></div>
+      <div class="plan"><h3>Mensuel</h3><span class="price">2,99 €</span><p>par mois, sans engagement</p></div>
+      <div class="plan"><h3>À vie</h3><span class="price">39,99 €</span><p>un seul achat, pour toujours</p></div>
+    </div>
+    <p class="free"><strong>Gratuit :</strong> 3 sorties par semaine, les envies Nature et Gourmand, jusqu’à 45 minutes, le carnet et les badges. Prix en France, taxes incluses. Les abonnements se gèrent et se résilient dans les réglages de ton compte Apple.</p>
+  </div>
+</section>
+
+<section class="promise" aria-labelledby="t-vie-privee">
+  <div class="wrap">
+    <span class="label" style="color:var(--balise)">Vie privée</span>
+    <h2 id="t-vie-privee" style="margin-top:10px">Ta balade te regarde.</h2>
+    <div class="grid">
+      <div><strong>Pas de compte</strong><p>Rien à créer, rien à retenir. Ton carnet reste sur ton iPhone.</p></div>
+      <div><strong>Position en balade seulement</strong><p>Elle sert à tracer la boucle et valider les lieux, pendant la sortie uniquement.</p></div>
+      <div><strong>Pas de publicité</strong><p>Aucun traceur publicitaire. Le détail est dans la <a href="confidentialite.html">politique de confidentialité</a>.</p></div>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer>
+  <div class="wrap">
+    <small>© 2026 Dylan COUTO DE OLIVEIRA · Détour</small>
+    <nav aria-label="Liens légaux">
+      <a href="support.html">Support</a>
+      <a href="confidentialite.html">Confidentialité</a>
+      <a href="conditions.html">Conditions</a>
+      <a href="mentions-legales.html">Mentions légales</a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>
