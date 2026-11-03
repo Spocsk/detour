@@ -156,3 +156,13 @@ footer .wrap { display: flex; flex-wrap: wrap; gap: 20px; justify-content: space
 footer nav { display: flex; flex-wrap: wrap; gap: 6px 18px; }
 footer a { font-weight: 600; font-size: 15px; text-decoration: none; }
 footer small { color: var(--muted); font-size: 14px; }
+
+/* Sélecteur de langue */
+.lang { position: relative; }
+.lang summary { list-style: none; display: flex; align-items: center; gap: 6px; cursor: pointer; font-weight: 600; font-size: 15px; padding: 10px 12px; border-radius: 999px; }
+.lang summary::-webkit-details-marker { display: none; }
+.lang summary:hover, .lang[open] summary { background: var(--surface); }
+.lang ul { position: absolute; inset-inline-end: 0; top: calc(100% + 6px); z-index: 20; margin: 0; padding: 6px; list-style: none; min-width: 190px; max-height: min(70vh, 480px); overflow-y: auto; background: var(--ground); border: 1px solid var(--line); border-radius: 16px; box-shadow: 0 12px 32px rgba(23, 37, 30, 0.16); }
+.lang li a { display: block; padding: 9px 12px; border-radius: 10px; font-size: 15px; font-weight: 500; }
+.lang li a[aria-current] { background: var(--surface); font-weight: 700; }
+@media (max-width: 640px) { .lang summary span { display: none; } }

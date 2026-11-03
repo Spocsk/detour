@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Détour · vòng đi bộ có điểm dừng</title>
+<meta name="description" content="Détour vẽ một vòng đi bộ vừa với thời gian của bạn, với những địa điểm có thật để ghé qua trên đường. Dành cho iPhone, iPad và iPhone Duo.">
+<meta name="theme-color" content="#F2C230">
+<meta property="og:title" content="Détour · vòng đi bộ có điểm dừng">
+<meta property="og:description" content="Détour vẽ một vòng đi bộ vừa với thời gian của bạn, với những địa điểm có thật để ghé qua trên đường. Dành cho iPhone, iPad và iPhone Duo.">
+<meta property="og:image" content="../assets/icon-512.png">
+<meta name="apple-itunes-app" content="app-id=6829195491">
+<link rel="icon" href="../assets/favicon.png">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="alternate" hreflang="x-default" href="../en/index.html">
+<link rel="alternate" hreflang="fr" href="../index.html">
+<link rel="alternate" hreflang="en" href="../en/index.html">
+<link rel="alternate" hreflang="es" href="../es/index.html">
+<link rel="alternate" hreflang="pt" href="../pt/index.html">
+<link rel="alternate" hreflang="zh-Hans" href="../zh/index.html">
+<link rel="alternate" hreflang="zh-Hant" href="../zh-tw/index.html">
+<link rel="alternate" hreflang="hi" href="../hi/index.html">
+<link rel="alternate" hreflang="ar" href="../ar/index.html">
+<link rel="alternate" hreflang="bn" href="../bn/index.html">
+<link rel="alternate" hreflang="ru" href="../ru/index.html">
+<link rel="alternate" hreflang="id" href="../id/index.html">
+<link rel="alternate" hreflang="ur" href="../ur/index.html">
+<link rel="alternate" hreflang="de" href="../de/index.html">
+<link rel="alternate" hreflang="ja" href="../ja/index.html">
+<link rel="alternate" hreflang="tr" href="../tr/index.html">
+<link rel="alternate" hreflang="vi" href="./index.html">
+<link rel="alternate" hreflang="ko" href="../ko/index.html">
+<link rel="alternate" hreflang="it" href="../it/index.html">
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="index.html"><img src="../assets/favicon.png" alt="" width="34" height="34">Détour</a>
+    <nav class="nav" aria-label="Điều hướng chính"><a href="index.html#comment" class="opt">Cách hoạt động</a><a href="index.html#plus" class="opt">Détour+</a><a href="../support.html">Hỗ trợ</a><!--lang--><details class="lang"><summary aria-label="Ngôn ngữ"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.2 3 14.8 0 18M12 3c-3 3.2-3 14.8 0 18"/></svg><span>Tiếng Việt</span></summary><ul><li><a href="../index.html" hreflang="fr" lang="fr" data-lang="fr">Français</a></li><li><a href="../en/index.html" hreflang="en" lang="en" data-lang="en">English</a></li><li><a href="../es/index.html" hreflang="es" lang="es" data-lang="es">Español</a></li><li><a href="../pt/index.html" hreflang="pt" lang="pt" data-lang="pt">Português</a></li><li><a href="../zh/index.html" hreflang="zh-Hans" lang="zh-Hans" data-lang="zh">简体中文</a></li><li><a href="../zh-tw/index.html" hreflang="zh-Hant" lang="zh-Hant" data-lang="zh-tw">繁體中文</a></li><li><a href="../hi/index.html" hreflang="hi" lang="hi" data-lang="hi">हिन्दी</a></li><li><a href="../ar/index.html" hreflang="ar" lang="ar" data-lang="ar">العربية</a></li><li><a href="../bn/index.html" hreflang="bn" lang="bn" data-lang="bn">বাংলা</a></li><li><a href="../ru/index.html" hreflang="ru" lang="ru" data-lang="ru">Русский</a></li><li><a href="../id/index.html" hreflang="id" lang="id" data-lang="id">Bahasa Indonesia</a></li><li><a href="../ur/index.html" hreflang="ur" lang="ur" data-lang="ur">اردو</a></li><li><a href="../de/index.html" hreflang="de" lang="de" data-lang="de">Deutsch</a></li><li><a href="../ja/index.html" hreflang="ja" lang="ja" data-lang="ja">日本語</a></li><li><a href="../tr/index.html" hreflang="tr" lang="tr" data-lang="tr">Türkçe</a></li><li><a href="./index.html" hreflang="vi" lang="vi" data-lang="vi" aria-current="true">Tiếng Việt</a></li><li><a href="../ko/index.html" hreflang="ko" lang="ko" data-lang="ko">한국어</a></li><li><a href="../it/index.html" hreflang="it" lang="it" data-lang="it">Italiano</a></li></ul></details><!--/lang--></nav>
+  </div>
+</header>
+<main>
+
+<section class="hero" aria-labelledby="titre">
+  <svg class="contours" viewBox="0 0 1200 700" preserveAspectRatio="none" aria-hidden="true" fill="none" stroke="#17251E" stroke-opacity="0.12" stroke-width="1.5">
+    <path d="M-20 120 C 200 60, 420 200, 700 110 S 1100 40, 1220 100"/>
+    <path d="M-20 170 C 220 110, 440 250, 720 160 S 1100 90, 1220 150"/>
+    <path d="M-20 560 C 240 500, 460 640, 760 560 S 1100 500, 1220 540"/>
+    <path d="M-20 610 C 240 550, 480 690, 780 610 S 1100 550, 1220 590"/>
+  </svg>
+  <div class="wrap">
+    <div class="hero-copy">
+      <img src="../assets/icon-512.png" alt="Biểu tượng ứng dụng Détour" width="88" height="88" style="border-radius:22px;box-shadow:0 14px 28px rgba(23,37,30,.22)">
+      <h1 id="titre">Détour</h1>
+      <p class="lead">Cho mình biết bạn có bao nhiêu thời gian, mình sẽ cho bạn một lý do hay để ra ngoài đi bộ.</p>
+      <div class="hero-actions">
+        <a class="store-badge" href="https://apps.apple.com/us/app/id6829195491"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.37 12.78c-.02-2.3 1.88-3.4 1.96-3.45-1.07-1.56-2.73-1.78-3.32-1.8-1.41-.14-2.76.83-3.48.83-.72 0-1.82-.81-3-.79-1.54.02-2.96.9-3.76 2.27-1.6 2.78-.41 6.9 1.15 9.16.76 1.1 1.67 2.34 2.86 2.3 1.15-.05 1.58-.74 2.97-.74 1.38 0 1.77.74 2.98.72 1.23-.02 2.01-1.12 2.76-2.23.87-1.28 1.23-2.52 1.25-2.58-.03-.01-2.4-.92-2.42-3.65zM14.1 6.06c.63-.77 1.06-1.83.94-2.89-.91.04-2.01.61-2.67 1.37-.58.67-1.1 1.76-.96 2.8 1.01.08 2.05-.52 2.69-1.28z"/></svg><span><small>Tải về trên</small><strong>App Store</strong></span></a>
+        <a class="btn btn-soft" href="#comment">Cách hoạt động</a>
+      </div>
+      <p class="hero-note">Dành cho iPhone, iPad và iPhone Duo · Miễn phí, kèm Détour+ tùy chọn</p>
+    </div>
+    <div class="hero-art">
+      <svg class="hero-loop" viewBox="0 0 400 520" aria-hidden="true" fill="none">
+        <defs><mask id="m"><path class="reveal" d="M60 440 C 10 330, 20 170, 120 90 C 220 20, 360 60, 370 190 C 380 320, 300 380, 250 450 C 200 510, 110 500, 60 440 Z" stroke="#fff" stroke-width="14" stroke-linecap="round"/></mask></defs>
+        <path class="loop-path" mask="url(#m)" d="M60 440 C 10 330, 20 170, 120 90 C 220 20, 360 60, 370 190 C 380 320, 300 380, 250 450 C 200 510, 110 500, 60 440 Z" stroke="#17251E" stroke-width="6" stroke-linecap="round"/>
+        <circle class="pop" style="animation-delay:.9s" cx="120" cy="90" r="13" fill="#C2366B" stroke="#17251E" stroke-width="4"/>
+        <circle class="pop" style="animation-delay:1.4s" cx="370" cy="190" r="13" fill="#2C6BB0" stroke="#17251E" stroke-width="4"/>
+        <circle class="pop" style="animation-delay:2s" cx="250" cy="450" r="13" fill="#2F7D4F" stroke="#17251E" stroke-width="4"/>
+        <circle cx="60" cy="440" r="14" fill="#17251E"/>
+      </svg>
+      <div class="phone"><img src="../assets/vi/iphone-03-marche.jpg" alt="Màn hình dẫn đường: bản đồ, lộ trình nét đứt và điểm dừng tiếp theo, tiệm bánh Berthillon cách 16 phút" width="500" height="1087"></div>
+    </div>
+  </div>
+</section>
+
+<section id="comment" aria-labelledby="t-comment">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="label">Cách hoạt động</span>
+      <h2 id="t-comment">Ba lựa chọn, rồi bước ra cửa.</h2>
+      <p>Détour không chỉ đường từ A đến B. Nó cho bạn một lý do để đi, rồi đưa bạn về nhà.</p>
+    </div>
+    <div class="steps">
+      <div class="card"><span class="num">1</span><h3>Thời gian của bạn</h3><p>20, 30, 45 phút hoặc hơn. Vòng đi bộ bắt đầu từ chỗ bạn đứng và đưa bạn quay về.</p></div>
+      <div class="card"><span class="num">2</span><h3>Tâm trạng của bạn</h3><p>Ăn ngon, thiên nhiên, ngắm cảnh hoặc di sản: 2 đến 4 địa điểm có thật để ghé qua trên đường.</p></div>
+      <div class="card"><span class="num">3</span><h3>Đi thôi</h3><p>Cứ theo lộ trình. Mỗi nơi bạn đến được xác nhận tự động và để lại một con dấu trong sổ tay.</p></div>
+    </div>
+  </div>
+</section>
+
+<section aria-labelledby="t-envies" style="padding-top:0">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="label">Bốn tâm trạng</span>
+      <h2 id="t-envies">Lý do để đi bộ, không phải tour tham quan.</h2>
+    </div>
+    <div class="themes"><div class="theme" style="background:#F8DDE7"><span class="ico" style="background:#C2366B"><svg viewBox="0 0 24 24" fill="none" stroke="#FDFDFB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 11h14l-2 9H7z M7 11a5 5 0 0 1 10 0"/></svg></span><strong>Ăn ngon</strong><span>Tiệm bánh, quán cà phê, kem.</span></div><div class="theme" style="background:#DCEEDF"><span class="ico" style="background:#2F7D4F"><svg viewBox="0 0 24 24" fill="none" stroke="#FDFDFB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 19c0-8 6-14 14-14 0 8-6 14-14 14z M5 19l8-8"/></svg></span><strong>Thiên nhiên</strong><span>Công viên, dòng sông, khu vườn.</span></div><div class="theme" style="background:#DCE8F5"><span class="ico" style="background:#2C6BB0"><svg viewBox="0 0 24 24" fill="none" stroke="#FDFDFB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 19l6-9 4 6 3-4 5 7z"/></svg></span><strong>Ngắm cảnh</strong><span>Đài quan sát, cây cầu, toàn cảnh.</span></div><div class="theme" style="background:#F3E6CF"><span class="ico" style="background:#9A5F0E"><svg viewBox="0 0 24 24" fill="none" stroke="#FDFDFB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4l8 5H4z M5 10h14 M7 10v8 M12 10v8 M17 10v8 M4 20h16"/></svg></span><strong>Di sản</strong><span>Nhà thờ, bảo tàng, đài tưởng niệm.</span></div></div>
+  </div>
+</section>
+
+<section aria-labelledby="t-ecrans" style="padding-top:0">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="label">Qua hình ảnh</span>
+      <h2 id="t-ecrans">Một buổi đi bộ qua bốn màn hình.</h2>
+    </div>
+    <div class="gallery">
+      <figure><div class="phone"><img src="../assets/vi/iphone-02-sortir.jpg" alt="Màn hình chính “Đi thôi?” với phần chọn thời gian và tâm trạng" loading="lazy" width="500" height="1087"></div><figcaption>Chọn thời gian và tâm trạng</figcaption></figure>
+      <figure><div class="phone"><img src="../assets/vi/iphone-03-marche.jpg" alt="Buổi đi bộ có dẫn đường trên bản đồ" loading="lazy" width="500" height="1087"></div><figcaption>Đi theo vòng</figcaption></figure>
+      <figure><div class="phone"><img src="../assets/vi/iphone-04-tampon.jpg" alt="Con dấu nhận được tại tiệm bánh Berthillon" loading="lazy" width="500" height="1087"></div><figcaption>Nhận một con dấu ở mỗi nơi</figcaption></figure>
+      <figure><div class="phone"><img src="../assets/vi/iphone-06-carnet.jpg" alt="Sổ tay con dấu và bản đồ những nơi đã ghé" loading="lazy" width="500" height="1087"></div><figcaption>Lấp đầy sổ tay</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section aria-labelledby="t-duo" style="padding-top:0">
+  <div class="wrap split">
+    <div>
+      <span class="label">iPhone Duo</span>
+      <h2 id="t-duo" style="margin-top:10px">Gập trong tay, mở ra là cả bản đồ.</h2>
+      <ul class="bullets">
+        <li>Khi gập, những thứ cần thiết nằm gọn trên màn hình ngoài: thời gian, tâm trạng và nút “Đi”.</li>
+        <li>Khi mở, cài đặt ở một bên, vòng đi bộ dần hiện ra ở bên kia.</li>
+        <li>Chế độ bất ngờ: những nơi tiếp theo lộ ra dần khi bạn đi.</li>
+        <li>Trong lúc đi bộ, địa điểm kế tiếp và quãng đường luôn hiện trên màn hình khóa và trong Dynamic Island.</li>
+        <li>Mục tiêu hằng tuần, huy hiệu, thử thách mới mỗi tuần, và mỗi buổi đi bộ có thể được lưu vào Sức khỏe của Apple nếu bạn muốn.</li>
+      </ul>
+    </div>
+    <div class="shot"><img src="../assets/duo-ouvert.jpg" alt="iPhone Duo đang mở: “Chuẩn bị buổi đi bộ” ở bên trái, vòng đi bộ trên bản đồ ở bên phải" loading="lazy" width="1400" height="985"></div>
+  </div>
+</section>
+
+<section id="plus" aria-labelledby="t-plus" style="padding-top:0">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="label">Détour+</span>
+      <h2 id="t-plus">Miễn phí để tập thói quen. Détour+ để đi xa hơn.</h2>
+      <p>Không giới hạn buổi đi bộ, cả bốn tâm trạng, vòng đi bộ tối đa 90 phút với địa hình tự chọn, và chế độ bất ngờ.</p>
+    </div>
+    <div class="pricing">
+      <div class="plan best"><span class="pill">7 ngày miễn phí</span><h3>Hằng năm</h3><span class="price">Mỗi năm</span><p>bắt đầu bằng 7 ngày dùng thử miễn phí</p></div>
+      <div class="plan"><h3>Hằng tháng</h3><span class="price">Mỗi tháng</span><p>hủy bất cứ lúc nào</p></div>
+      <div class="plan"><h3>Trọn đời</h3><span class="price">Một lần</span><p>mua một lần, dùng mãi mãi</p></div>
+    </div>
+    <p class="free"><strong>Miễn phí:</strong> 3 buổi đi bộ mỗi tuần, hai tâm trạng thiên nhiên và ăn ngon, tối đa 45 phút, sổ tay và huy hiệu. Giá khác nhau tùy quốc gia. Gói đăng ký được quản lý và hủy trong cài đặt Tài khoản Apple.</p>
+  </div>
+</section>
+
+<section class="promise" aria-labelledby="t-vie-privee">
+  <div class="wrap">
+    <span class="label" style="color:var(--balise)">Quyền riêng tư</span>
+    <h2 id="t-vie-privee" style="margin-top:10px">Buổi đi bộ là chuyện riêng của bạn.</h2>
+    <div class="grid">
+      <div><strong>Không cần tài khoản</strong><p>Không phải tạo gì, không phải nhớ gì. Sổ tay của bạn nằm lại trên iPhone.</p></div>
+      <div><strong>Chỉ định vị khi đi bộ</strong><p>Vị trí chỉ dùng để vẽ vòng đi bộ và xác nhận các địa điểm, và chỉ trong lúc bạn đi.</p></div>
+      <div><strong>Không quảng cáo</strong><p>Không có công cụ theo dõi quảng cáo. Chi tiết nằm trong <a href="../confidentialite.html">chính sách quyền riêng tư</a>.</p></div>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer>
+  <div class="wrap">
+    <small>© 2026 Dylan COUTO DE OLIVEIRA · Détour</small>
+    <nav aria-label="Liên kết pháp lý">
+      <a href="../support.html">Hỗ trợ</a>
+      <a href="../confidentialite.html">Quyền riêng tư</a>
+      <a href="../conditions.html">Điều khoản</a>
+      <a href="../mentions-legales.html">Thông tin pháp lý</a>
+    </nav>
+  </div>
+</footer>
+<script src="../assets/lang.js" defer></script>
+</body>
+</html>
